@@ -64,7 +64,7 @@ def killall(match, meta):
 
 
 if __name__ == '__main__':
-    basebot.run_minibot(botname='jackBot', nickname='jackBot', short_help='Just ask!', log_users=True,
+    basebot.run_minibot(botname='jackBot', nickname='jackBot', log_users=True,
                         regexes={
                             '(?i)([\s\S]*?)how([\s\S]*?)win([\s\S]*?)(jackbox|quiplash|bracketeering|earwax|trivia murder party|t.m.p.|tmp|tee K.O.|tko|civic doodle|fibbage|guesspionage|bidiots|survive the internet|bomb corp)': "I'm not gonna tell you how to cheat! Mostly because I don't know :/",
                             '(?i)([\s\S]*?)how([\s\S]*?)many (?!(people|players|participants))([\s\S]*?)jackbox': 'There are 25 games total that @DoctorNumberFour has, and 10 that niek has. Most games require at least 3 players (though Guesspionage and Fibbage only require 2 (and Trivia Murder Party and You Don\'t Know Jack only require 1! ^^)) and can hold up to 8 players, though Bracketeering can hold up to 16. In the future, please use !games for the number of games, and !players [game] for number of players.',
@@ -110,4 +110,5 @@ if __name__ == '__main__':
                             '(?i)([\s\S]*?)is.{0,2}this.{0,2}real.{0,2}life':'Yes',
                             'how([\s\S]*?)base.{0,2}bot':'Ask @Xyzzy.',
                             '/me spies an? @?jackBot':'/me spies you back',
-                            '/me has resurrected @jackBot':alive})
+                            '/me has resurrected @jackBot':alive,
+                            '^!help$':'Just ask!'})
