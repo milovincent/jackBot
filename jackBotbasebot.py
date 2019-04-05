@@ -145,4 +145,4 @@ if __name__ == '__main__':
                             'how([\s\S]*?)base.{0,2}bot':'Ask @Xyzzy.',
                             '/me spies an? @?jackBot':'/me spies you back',
                             '/me has resurrected @jackBot':alive,
-                            '^!help$':'Just ask!'})
+                            '^!help$':'I give you info about Jackbox games and how to play them.'})
