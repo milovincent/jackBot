@@ -115,7 +115,7 @@ if __name__ == '__main__':
                             '(?i)this.{0,2}town.{0,2}(ain\'t|aint|isn\'t|isnt|is not).{0,2}big.{0,2}enough.{0,2}for.{0,2}(the.{0,2}two.{0,2}of.{0,2}us|the both of us|us two|both of us)': tumble,
                             '(?i)gigawatt': greatScott,
                             '(?i)back.{0,2}to.{0,2}the.{0,2}future': greatScott,
-                            '(?i)great.{0,2}scott': myThing, '(?<!\S/)(u|r)/([a-zA-Z0-9_-]{3,20})': linker,
+                            '(?i)great.{0,2}scott': myThing, '(?<!\S/)(u|r)/([a-zA-Z0-9_-]{2,21})': linker,
                             '^!kill @jackbot$': kill,
                             '^!killall @jackbot$': killall,
                             '(?i)([\s\S]*?)where.{0,2}is(.{0,2}bot.{0,2}bot|([\s\S]*?)other.{0,2}bots)': 'BotBot is down right now, sorry! Ask =3 about it. It probably won\'t be up for some time, so you can run your own using one of the many bot libraries other people have made, such as yaboli (from @Garmy) and basebot (what jackBot uses, made by @Xyzzy). you do have to take care of server-side stuff though. :/',
