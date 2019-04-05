@@ -35,6 +35,7 @@ def linkeru(match, meta):
         meta['reply']('reddit.com/u/%s' % (re.findall('.*?\\b/?u/([\S]*)\\b', meta['msg'].content, flags=0)[count]))
         meta['self'].set_nickname('jackBot')
         count = count + 1
+    count = 0
     for i in re.findall('.*?\\b/?r/([\S]*)\\b', meta['msg'].content, flags=0):
         meta['self'].set_nickname('RedditLinker')
         meta['reply']('reddit.com/r/%s' % (re.findall('.*?\\b/?r/([\S]*)\\b', meta['msg'].content, flags=0)[count]))
@@ -47,6 +48,7 @@ def linker(match, meta):
         meta['reply']('reddit.com/r/%s' % (re.findall('.*?\\b/?r/([\S]*)\\b', meta['msg'].content, flags=0)[count]))
         meta['self'].set_nickname('jackBot')
         count = count + 1
+    count = 0
     for i in re.findall('.*?\\b/?u/([\S]*)\\b', meta['msg'].content, flags=0):
         meta['self'].set_nickname('RedditLinker')
         meta['reply']('reddit.com/u/%s' % (re.findall('.*?\\b/?u/([\S]*)\\b', meta['msg'].content, flags=0)[count]))
