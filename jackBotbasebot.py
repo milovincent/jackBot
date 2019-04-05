@@ -1,6 +1,6 @@
 import sys, basebot, re
 
-usersToTag = ['Doctor Number Four', 'liff', 'sxafo', 'D10', 'Vanna', 'Vannesa', 'The Tenth Doctor', 'FibonacciDaniel']
+usersToTag = ['Doctor Number Four', 'liff', 'sxafo', 'D10', 'Vanna', 'Vannesa', 'The Tenth Doctor', 'FibonacciDaniel', 'Mala Lupa']
 
 def tumble(match, meta):
     meta['self'].set_nickname('tumbleweed')
