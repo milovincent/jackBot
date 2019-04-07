@@ -31,12 +31,12 @@ def myThing(match, meta):
 
 def linker(match, meta):
     if meta['sender'] != 'RedditLinker':
-        users = re.findall(r'(?:^|(?<=\s))/?u/([a-zA-Z0-9_-]{3,20})\b', meta['msg'].content, flags=0)
+        users = re.findall(r'(?<![a-zA-Z0-9]{1})/?u/([a-zA-Z0-9_-]{3,20})\b', meta['msg'].content, flags=0)
         for i in users:
             meta['self'].set_nickname('RedditLinker')
             meta['reply']('reddit.com/u/%s' % i)
             meta['self'].set_nickname('jackBot')
-        reddits = re.findall(r'(?:^|(?<=\s))/?r/([a-zA-Z0-9_-]{2,21})\b', meta['msg'].content, flags=0)
+        reddits = re.findall(r'(?<![a-zA-Z0-9]{1})/?r/([a-zA-Z0-9_-]{2,21})\b', meta['msg'].content, flags=0)
         for i in reddits:
             meta['self'].set_nickname('RedditLinker')
             meta['reply']('reddit.com/r/%s' % i)
