@@ -52,12 +52,14 @@ def room(match, meta):
 
 
 def kill(match, meta):
-    meta['reply']('/me calls for a mate as a toad would')
-    meta['self'].close()
+    if meta['msg'].sender.is_manager:
+        meta['reply']('/me calls for a mate as a toad would')
+        meta['self'].close()
 
 
 def killall(match, meta):
-    meta['self'].manager.shutdown()
+    if meta['msg'].sender.is_manager:
+        meta['self'].manager.shutdown()
 
 
 
