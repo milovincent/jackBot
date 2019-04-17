@@ -128,7 +128,7 @@ if __name__ == '__main__':
                             '^!players$': 'Most games require at least 3 players (though Guesspionage and Fibbage only require 2 and several only require 1) and can hold up to 8 players (though Bracketeering can hold up to 16, Bidiots and Zeeple Dome hold 6, and Bomb Corp can only hold 4).',
                             '(?i)who([\s\S]*?)jack\.?\s?bot': 'I was Made by @DoctorNumberFour using Xyzzy\'s basebot library: https://github.com/CylonicRaider/basebot!',
                             '(?i)(when|where)([\s\S]*?)jack\.?\s?bot': 'I am an eldritch abomination from a land outside of time. Do not ask me such trivial things.',
-                            '(?i)([\s\S]*?)is\.?\s?this\.?\s?real\.?\s?life':'Yes',
+                            '(?i)^is\.?\s?this\.?\s?real\.?\s?life\??':'Yes',
                             'how([\s\S]*?)base\.?\s?bot':'Ask @Xyzzy.',
                             '/me spies an? @?jackBot':'/me spies you back',
                             '/me has resurrected @jackBot':alive,
