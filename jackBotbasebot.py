@@ -27,7 +27,12 @@ def myThing(match, meta):
     meta['self'].set_nickname('DocBrown')
     meta['reply']('Hey, that\'s my thing!')
     meta['self'].set_nickname('jackBot')
-
+def honk(match, meta):
+    geese = re.findall(r'(?i)(^|\s|\b)g(oo|ee)se($|\s|\b)', meta['msg'].content, flags = 0)
+    for goose in geese:
+        meta['self'].set_nickname('A Goose')
+        meta['reply']('Honk!')
+        meta['self'].set_nickname('jackBot')
 
 def linker(match, meta):
     if meta['sender'] != 'RedditLinker':
