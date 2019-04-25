@@ -132,4 +132,5 @@ if __name__ == '__main__':
                             'how([\s\S]*?)base\.?\s?bot':'Ask @Xyzzy.',
                             '/me spies an? @?jackBot':'/me spies you back',
                             '/me has resurrected @jackBot':alive,
-                            '^!help$':'I give you info about Jackbox games and how to play them.'})
+                            '^!help$':'I give you info about Jackbox games and how to play them. Just ask!',
+                            r'(?i)(^|\s|\b)g(oo|ee)se($|\s|\b)': honk})
