@@ -17,6 +17,10 @@ def greatScott(match, meta):
     meta['reply']('Great Scott, %s' % (meta['sender']))
     meta['self'].set_nickname('jackBot')
 
+def xyzzers(match, meta):
+    if re.search("@xyzzy", meta['msg'].content) == None:
+        meta['reply']("Ask @Xyzzy.")
+        
 def alive(match, meta):
     meta['reply']('/me IS ALIVE!')
     meta['self'].set_nickname('Thunder')
@@ -27,6 +31,7 @@ def myThing(match, meta):
     meta['self'].set_nickname('DocBrown')
     meta['reply']('Hey, that\'s my thing!')
     meta['self'].set_nickname('jackBot')
+
 def honk(match, meta):
     geese = re.findall(r'(?i)(^|\s|\b)g(oo|ee)se($|\s|\b)', meta['msg'].content, flags = 0)
     for goose in geese:
@@ -134,7 +139,7 @@ if __name__ == '__main__':
                             r'(?i)who([\s\S]*?)jack\.?\s?bot': 'I was Made by @DoctorNumberFour using Xyzzy\'s basebot library: https://github.com/CylonicRaider/basebot!',
                             r'(?i)(when|where)([\s\S]*?)jack\.?\s?bot': 'I am an eldritch abomination from a land outside of time. Do not ask me such trivial things.',
                             r'(?i)^is\.?\s?this\.?\s?real\.?\s?life\??':'Yes',
-                            'how([\s\S]*?)base\.?\s?bot':'Ask @Xyzzy.',
+                            'how([\s\S]*?)base\.?\s?bot':xyzzers,
                             '/me spies an? @?jackBot':'/me spies you back',
                             '/me has resurrected @jackBot':alive,
                             '^!help$':'I give you info about Jackbox games and how to play them. Just ask!',
