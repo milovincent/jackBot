@@ -1,5 +1,4 @@
-import sys, re
-from basebot import basebot
+import sys, re, basebot
 
 usersToTag = ['Doctor Number Four', 'liff', 'sxafo', 'D10', 'Vanna', 'Vannesa', 'The Tenth Doctor', 'FibonacciDaniel', 'Mala Lupa']
 
