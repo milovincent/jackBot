@@ -1,5 +1,7 @@
 import sys, basebot, re
 
+help(basebot)
+
 usersToTag = ['Doctor Number Four', 'liff', 'sxafo', 'D10', 'Vanna', 'Vannesa', 'The Tenth Doctor', 'FibonacciDaniel', 'Mala Lupa']
 
 def tumble(match, meta):
