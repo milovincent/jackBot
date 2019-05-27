@@ -1,4 +1,5 @@
 import sys, basebot, re
+from basebot import run_minibot
 
 usersToTag = ['Doctor Number Four', 'liff', 'sxafo', 'D10', 'Vanna', 'Vannesa', 'The Tenth Doctor', 'FibonacciDaniel', 'Mala Lupa']
 
@@ -20,7 +21,7 @@ def greatScott(match, meta):
 def xyzzers(match, meta):
     if re.search("@xyzzy", meta['msg'].content) == None:
         meta['reply']("Ask @Xyzzy.")
-        
+
 def alive(match, meta):
     meta['reply']('/me IS ALIVE!')
     meta['self'].set_nickname('Thunder')
