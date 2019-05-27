@@ -1,5 +1,5 @@
 import sys, re
-from python-websocket-server import websocket_server
+import websocket_server
 from basebot import basebot
 
 usersToTag = ['Doctor Number Four', 'liff', 'sxafo', 'D10', 'Vanna', 'Vannesa', 'The Tenth Doctor', 'FibonacciDaniel', 'Mala Lupa']
